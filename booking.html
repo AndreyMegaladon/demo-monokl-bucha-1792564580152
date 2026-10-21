@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Монокль - Бронювання</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F5F5F5] text-[#111111] font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 h-20 flex items-center shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-wider text-[#111111] flex items-center gap-2">
+                <span class="text-[#D4AF37]">✦</span> МОНОКЛЬ
+            </a>
+            <nav class="hidden md:flex items-center gap-2">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Головна</a>
+                <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Про нас</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Меню</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Галерея</a>
+                <a href="booking.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium transition">Бронювання</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Контакти</a>
+            </nav>
+            <div class="md:hidden flex items-center">
+                <a href="booking.html" class="bg-[#D4AF37] text-white px-4 py-2 rounded-lg text-sm font-bold">Бронювати</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-gray-100 py-3 border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 text-sm text-gray-600">
+            <a href="index.html" class="hover:underline">Головна</a> > Бронювання
+        </div>
+    </div>
+
+    <section class="py-20 px-6">
+        <div class="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl p-10">
+            <div class="text-center mb-10">
+                <h1 class="text-3xl font-bold mb-2">Бронювання столика</h1>
+                <p class="text-gray-600">Заповніть форму і ми зв'яжемося з вами для підтвердження</p>
+            </div>
+
+            <form action="https://formsubmit.co/monokl.bucha@gmail.com" method="POST" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-semibold mb-2">Ваше ім'я</label>
+                    <input type="text" name="name" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition" placeholder="Введіть ваше ім'я">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2">Номер телефону</label>
+                    <input type="tel" name="phone" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition" placeholder="+380...">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Дата</label>
+                        <input type="date" name="date" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Час</label>
+                        <input type="time" name="time" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2">Кількість гостей</label>
+                    <input type="number" name="guests" min="1" max="10" value="2" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white py-5 rounded-xl text-lg font-bold hover:shadow-xl transition">Забронювати</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Монокль</h3>
+                <p class="text-sm text-gray-400">Затишна кав’ярня та кафе у європейському стилі в Бучі.</p>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Контакти</h3>
+                <p class="text-sm text-gray-400 mb-2">вул. Пушкінська, 2л, Буча</p>
+                <p class="text-sm text-gray-400 mb-2">Телефон: +380662548627</p>
+                <p class="text-sm text-gray-400">Email: monokl.bucha@gmail.com</p>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Графік роботи</h3>
+                <p class="text-sm text-gray-400 mb-2">Пн-Нд: 09:00 - 21:00</p>
+                <div class="flex gap-4 mt-4">
+                    <a href="https://www.instagram.com/monokl.bucha/" target="_blank" class="text-white hover:text-[#D4AF37] transition">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 border-t border-gray-800 mt-8 pt-6 text-center text-xs text-gray-500">
+            © 2024 Монокль. Усі права захищені.
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
