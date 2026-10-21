@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Монокль - Меню</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F5F5F5] text-[#111111] font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 h-20 flex items-center shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-wider text-[#111111] flex items-center gap-2">
+                <span class="text-[#D4AF37]">✦</span> МОНОКЛЬ
+            </a>
+            <nav class="hidden md:flex items-center gap-2">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Головна</a>
+                <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Про нас</a>
+                <a href="services.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium transition">Меню</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Галерея</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Бронювання</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Контакти</a>
+            </nav>
+            <div class="md:hidden flex items-center">
+                <a href="booking.html" class="bg-[#D4AF37] text-white px-4 py-2 rounded-lg text-sm font-bold">Бронювати</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-gray-100 py-3 border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 text-sm text-gray-600">
+            <a href="index.html" class="hover:underline">Головна</a> > Меню
+        </div>
+    </div>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold mb-4">Наше меню</h1>
+            <p class="text-gray-600">Обирайте улюблені страви та напої</p>
+        </div>
+
+        <div class="space-y-16">
+            <div>
+                <h2 class="text-2xl font-bold mb-6 text-[#D4AF37] border-b pb-2">Кава та напої</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-md flex justify-between items-center">
+                        <div>
+                            <h3 class="font-bold text-lg">Еспресо / Амеікано</h3>
+                            <p class="text-gray-600 text-sm mt-1">Класична кава з відбірних зерн якісного обсмаження</p>
+                        </div>
+                        <span class="text-xl font-bold text-[#D4AF37] ml-4">45₴</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-md flex justify-between items-center">
+                        <div>
+                            <h3 class="font-bold text-lg">Капучино / Лате</h3>
+                            <p class="text-gray-600 text-sm mt-1">Ніжна кава з молочною пінкою</p>
+                        </div>
+                        <span class="text-xl font-bold text-[#D4AF37] ml-4">65₴</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold mb-6 text-[#D4AF37] border-b pb-2">Випічка та десерти</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-md flex justify-between items-center">
+                        <div>
+                            <h3 class="font-bold text-lg">Круасан класичний</h3>
+                            <p class="text-gray-600 text-sm mt-1">Свіжоспечений хрусткий круасан</p>
+                        </div>
+                        <span class="text-xl font-bold text-[#D4AF37] ml-4">55₴</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold mb-6 text-[#D4AF37] border-b pb-2">Сніданки та страви</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-md flex justify-between items-center">
+                        <div>
+                            <h3 class="font-bold text-lg">Салат з фетою та блакитним сиром</h3>
+                            <p class="text-gray-600 text-sm mt-1">Вишуканий салат з ягідною заправкою</p>
+                        </div>
+                        <span class="text-xl font-bold text-[#D4AF37] ml-4">160₴</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-md flex justify-between items-center">
+                        <div>
+                            <h3 class="font-bold text-lg">Омлет класичний / з начинкою</h3>
+                            <p class="text-gray-600 text-sm mt-1">Ніжний ранковий омлет із свіжими інгредієнтами</p>
+                        </div>
+                        <span class="text-xl font-bold text-[#D4AF37] ml-4">120₴</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Монокль</h3>
+                <p class="text-sm text-gray-400">Затишна кав’ярня та кафе у європейському стилі в Бучі.</p>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Контакти</h3>
+                <p class="text-sm text-gray-400 mb-2">вул. Пушкінська, 2л, Буча</p>
+                <p class="text-sm text-gray-400 mb-2">Телефон: +380662548627</p>
+                <p class="text-sm text-gray-400">Email: monokl.bucha@gmail.com</p>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Графік роботи</h3>
+                <p class="text-sm text-gray-400 mb-2">Пн-Нд: 09:00 - 21:00</p>
+                <div class="flex gap-4 mt-4">
+                    <a href="https://www.instagram.com/monokl.bucha/" target="_blank" class="text-white hover:text-[#D4AF37] transition">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 border-t border-gray-800 mt-8 pt-6 text-center text-xs text-gray-500">
+            © 2024 Монокль. Усі права захищені.
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
